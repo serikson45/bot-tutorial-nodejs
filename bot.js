@@ -1,4 +1,4 @@
-var HTTP = require('http');
+var http = require('http');
 var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
@@ -36,7 +36,7 @@ function postMessage() {
 
   console.log('sending ' + botResponse + ' to ' + botID);
 
-  botReq = HTTP.request(options, function(res) {
+  botReq = http.request(options, function(res) {
       if(res.statusCode == 202) {
         //neat
       } else {
